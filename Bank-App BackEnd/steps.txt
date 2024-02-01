@@ -1,0 +1,40 @@
+BACKEND FOR BANK APPLICATION
+
+
+1.Create Package.Json file-npm init
+2.Install Express- npm i express
+4.create index.js File
+
+//create server using express
+     //1.import express
+     const express= require('express')
+     // 2.Creste server using express
+     const server = express()
+
+     //3.setup port for server app
+     server.listen(5000,()=>{
+    console.log('server listening on port 5000');
+    })
+5.Install CORS-npm install cors(cross orgin resoures sharing)
+-npm i cors 
+CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
+
+6. used cors in app 
+
+7. Api call.api reqest
+//register
+//login 
+
+frontend->request->internet ->http method->Api -> BACKEND
+
+8.to parse json data to js inserver app use-express.json()
+9to resolve client request in server
+server_app_name.htto_method('path',callback function)
+callback function is used to define logic to resolve client request send response
+10. DATABASE CONNECTION WITH NODE
+1)conect node and mongdb- npm i mongoose
+ii)create a service folder in BACKEND,create db.js file
+iii)Import mongoose and define connection string
+iv) create a model and schema for storing data in DATABASE
+v)Export the collection
+Vi)logic to resolve- create a logic.js in service folder
